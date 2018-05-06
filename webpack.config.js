@@ -16,7 +16,7 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
   output: {
-    filename: 'creasepattern.js',
+    filename: 'cp.js',
     path: path.resolve(__dirname, 'dist')
   }
 };

@@ -6,8 +6,6 @@
 // 1st order operations: crease pattern methods that don't require any arguments, or only 1st order types
 // 2nd order operations: crease pattern methods that require knowledge of methods in the geometry module
 
-/// <reference path="planarGraph.ts" />
-
 import * as M from './geometry'
 
 import { PlanarClean, PlanarNode, PlanarEdge, PlanarFace, PlanarSector, PlanarJunction, PlanarGraph } from './planarGraph'
@@ -304,7 +302,7 @@ class CreaseFace extends PlanarFace{
 	}
 }
 
-export class CreasePattern extends PlanarGraph{
+export default class CreasePattern extends PlanarGraph{
 
 	nodes:CreaseNode[];
 	edges:Crease[];
@@ -1341,4 +1339,3 @@ export class CreasePattern extends PlanarGraph{
 // 	}
 // 	return this;
 // }
-

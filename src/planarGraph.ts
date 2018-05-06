@@ -2,9 +2,6 @@
 // a planar graph data structure containing edges and vertices in 2D space
 // MIT open source license, Robby Kraft
 
-/// <reference path="graph.ts" />
-/// <reference path="geometry.ts" />
-
 import * as M from './geometry'
 import { GraphClean, GraphNode, GraphEdge, Graph } from './graph'
 
