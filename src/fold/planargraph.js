@@ -329,6 +329,8 @@ export const add_crease = function(graph, a, b, c, d) {
 	// let edge = Geom.Edge([a, b, c, d]);
 	let edge = Geom.Edge([a, b]);
 
+	console.log(Geom);
+
 	let edge_vertices = edge.endpoints
 		.map(ep => graph.vertices_coords
 			.map(v => Math.sqrt(Math.pow(ep[0]-v[0],2)+Math.pow(ep[1]-v[1],2)))
